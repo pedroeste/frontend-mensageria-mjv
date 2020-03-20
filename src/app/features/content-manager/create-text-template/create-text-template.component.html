@@ -1,0 +1,24 @@
+<app-menu title="CRIAÇÃO DE TEMPLATE DE TEXTO"
+  subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at hendrerit ligula augue.">
+</app-menu>
+
+<div class="create-email-component">
+  <div class="pt-4 pl-5 pr-5 pb-5">
+    <div class="row px-4 mt-5">
+      <form class="w-100" [formGroup]="templateForm">
+        <div class="form-group w-100">
+          <label>Nome do template</label>
+          <input type="text" class="form-control" placeholder="Nome do template" formControlName="formName">
+        </div>
+
+        <div class="form-group w-100">
+          <label>Mensagem</label>
+          <textarea class="form-control" rows="3" formControlName="message"></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button type="button" (click)="createTemplate()" class="btn btn-primary">Cadastrar template</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<app-menu title="GERENCIADOR DE TEMPLATES"
+  subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at hendrerit ligula augue.">
+</app-menu>
+
+<div class="content-manager-component">
+  <div class="pt-4 pl-5 pr-5 pb-5">
+    <div class="title my-5">
+      Personalize as mensagens dos respectivos serviços.
+    </div>
+
+    <div class="row px-4 mt-5">
+      <table mat-table [dataSource]="templates" matSort class="mat-elevation-z8 w-100">
+        <ng-container matColumnDef="templateName">
+          <th class="text-center" mat-header-cell *matHeaderCellDef mat-sort-header>Nome do Template</th>
+          <td class="text-center" mat-cell *matCellDef="let element"> {{element.templateName}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="message">
+          <th class="text-center" mat-header-cell *matHeaderCellDef mat-sort-header>Mensagem</th>
+          <td class="text-center" mat-cell *matCellDef="let element"> {{element.message}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="variables">
+          <th class="text-center" mat-header-cell *matHeaderCellDef mat-sort-header>Quantidade de variaveis</th>
+          <td class="text-center" mat-cell *matCellDef="let element"> {{element.variableQuantity}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th class="text-center" mat-header-cell *matHeaderCellDef mat-sort-header></th>
+          <td class="text-center" mat-cell *matCellDef="let element">
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-primary btn-sm" (click)="openEditDialog(element)">Editar</button>
+              <button class="btn btn-secondary btn-sm" (click)="openDeleteDialog(element)">Apagar</button>
+            </div>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+</div>

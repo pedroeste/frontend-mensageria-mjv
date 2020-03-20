@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  height: 100%;
+  background-color: #f6f6f6;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+p {
+  margin: 0 !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+fa-icon {
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: #145494;
+  border: 1px solid #145494;
+}
+
+form {
+  color: #a4a8a9;
+  input, select {
+    background-color: transparent !important;
+    color: #a4a8a9;
+  }
+
+  label {
+    margin-bottom: 0.3rem;
+    font-size: 12px;
+  }
+}
+
+.w-80 {
+  width: 80%;
+}
+
+hr {
+  margin-top: 5px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,66 @@
+<app-menu title="MENU PRINCIPAL"
+  subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at hendrerit ligula augue.">
+</app-menu>
+
+<div class="main-menu-component">
+  <div class="pt-4 pl-5 pr-5 pb-5">
+    <div class="title my-5">
+      Visualize e faça a gestão dos serviços de acordo com o filtro de perfil abaixo.
+    </div>
+
+    <form>
+      <span>Filtro por Perfil</span>
+      <hr>
+
+      <div class="mt-4 form-row">
+        <div class="form-group col-md-3">
+          <label for="cargo">Cargo</label>
+          <input type="string" class="form-control" id="cargo">
+        </div>
+      </div>
+
+      <div class="mt-4 form-row">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">Controle de serviços/ações</th>
+              <th scope="col">Criação</th>
+              <th scope="col">Alteração</th>
+              <th scope="col">Exclusão</th>
+              <th scope="col">Aprovação</th>
+              <th scope="col">Consulta</th>
+              <th scope="col">Todos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let option of serviceOptions">
+              <th scope="row">{{option.name}}</th>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 form-row">
+        <div class="col">
+          <div class="alert alert-warning alert-dismissible fade show w-80" role="alert">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus pharetra condimentum. Pellentesque eu
+            fringilla risus. Suspendisse egestas pulvinar nisi.
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end mt-4">
+            <button class="btn btn-outline-secondary mr-3">Cancelar</button>
+            <button class="btn btn-primary">Confirmar cadastro</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

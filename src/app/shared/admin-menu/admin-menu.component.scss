@@ -1,0 +1,41 @@
+.menu-component {
+  h1 {
+    font-weight: bold;
+  }
+
+  .bg-navbar {
+    background-image: linear-gradient(to right, #8d2a6f , #4d56a6);
+  }
+
+  .title {
+    color: #fff;
+    border-left: 4px solid #fff;
+  }
+
+  .input-group {
+    width: 25%;
+  }
+
+  .icon {
+    color: #c6c6c6
+  }
+
+  input {
+    background-color: transparent !important;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid #c6c6c6;
+    border-radius: unset;
+    color: #c6c6c6
+  }
+
+  ::placeholder {
+    color: #c6c6c6;
+    opacity: 1; /* Firefox */
+  }
+
+  .pointer {
+    cursor: pointer
+  }
+}

@@ -1,0 +1,19 @@
+<div class="container">
+  <form class="mt-5 w-100" [formGroup]="templateForm">
+    <div class="form-group w-100">
+      <label>Nome do template</label>
+      <input value="{{ data.templateName }}" type="text" class="form-control" placeholder="Nome do template"
+        formControlName="templateName">
+    </div>
+
+    <div class="form-group w-100">
+      <label>Mensagem</label>
+      <textarea class="form-control" rows="3" formControlName="message">{{ data.message }}</textarea>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button (click)="closeDialog()" type="button" class="btn btn-secondary">Cancelar</button>
+      <button (click)="editTemplate()" type="button" class="btn btn-primary ml-2">Editar
+        template</button>
+    </div>
+  </form>
+</div>

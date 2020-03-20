@@ -1,0 +1,73 @@
+.center {
+  align-self: center;
+}
+
+// .item {
+// 	flex: 1;
+// 	margin: 5px;
+// 	padding: 0 5px;
+// 	background:#fff;
+//   text-align: center;
+//   border-radius: 10px;
+// 	font-size: 1.5em;
+// }
+
+// .background {
+//   height: 600px;
+//   background-image: url("https://via.placeholder.com/600/600");
+// }
+
+body {
+  color: #818181
+}
+
+h1 {
+  font-weight: 400;
+}
+
+span {
+  color: #f8d0a9;
+}
+
+span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.btn {
+  width: 140px;
+  height: 40px;
+  font-size: 12px !important;
+}
+
+.background {
+  width : 680px;
+  border-radius: 15px;
+  height: 600px;
+  background-image: url('../../../assets/img/img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  margin-left: 35%;
+}
+
+.login {
+  color:white;
+  position:absolute;
+  z-index:5;
+  width : 30%;
+}
+.login > div {
+  background:#fff;
+  border-radius: 15px;
+  position: relative;
+  top: 75px;
+  left: -10px;
+  width : 480px;
+  height : 540px;
+}

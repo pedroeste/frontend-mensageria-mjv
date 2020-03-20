@@ -1,0 +1,26 @@
+<div class="menu-component">
+  <nav class="bg-navbar">
+    <div class="pt-5 pl-5 pr-5">
+      <img src="assets/img/mjv.png" width="130" height="50" alt="">
+      <div class="title mt-5">
+        <div class="content ml-3">
+          <h1 class="m-0">{{ title }}</h1>
+          <p class="p-0">{{ subtitle }}</p>
+        </div>
+      </div>
+
+      <div class="search mt-4">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-end">
+            <div class="input-group mb-3">
+              <div class="d-flex">
+                <input type="text" class="form-control" placeholder="Buscar por serviço">
+                <fa-icon class="mt-2 icon pointer" (click)="search()" [icon]="faSearch"></fa-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
